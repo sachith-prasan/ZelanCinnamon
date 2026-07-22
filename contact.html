@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Zelan Cinnamon Sri Lanka</title>
+  <meta name="description" content="Contact Zelan Cinnamon, Sri Lanka's premium Ceylon Cinnamon exporter. Submit inquiries for bulk sticks, pure powder, and private label packaging.">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cinnamon: {
+              50: '#FFF8F0',
+              100: '#FAF0E6',
+              200: '#F4E3CE',
+              300: '#E7C8A4',
+              400: '#D2B48C',
+              500: '#B8860B',
+              600: '#8B4513',
+              700: '#6B3410',
+              800: '#4A230B',
+              900: '#2C1406',
+            },
+            ceylon: {
+              green: '#2D5A27',
+              darkgreen: '#1E3F1B',
+              lightgreen: '#EAF4E8',
+              gold: '#D4AF37',
+              goldhover: '#B59226',
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#FFF8F0] text-[#2C1810] antialiased">
+
+  <!-- HEADER (LIGHT DESIGN) -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 sm:px-8 bg-white/95 backdrop-blur-md border-b border-cinnamon-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-cinnamon-700 via-cinnamon-600 to-ceylon-gold flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform duration-300 border border-cinnamon-300">
+          <i class="fa-solid fa-seedling text-lg text-amber-100"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-bold tracking-tight text-cinnamon-950 leading-none">ZELAN</span>
+          <span class="text-[10px] tracking-[0.25em] text-cinnamon-700 font-bold uppercase mt-1">CINNAMON</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-cinnamon-900">
+        <a href="index.html" class="hover:text-cinnamon-600 transition-colors py-1">Home</a>
+        <a href="about.html" class="hover:text-cinnamon-600 transition-colors py-1">About Us</a>
+        <a href="products.html" class="hover:text-cinnamon-600 transition-colors py-1">Products</a>
+        <a href="process.html" class="hover:text-cinnamon-600 transition-colors py-1">Our Process</a>
+        <a href="index.html#team" class="hover:text-cinnamon-600 transition-colors py-1">Our Team</a>
+        <a href="contact.html" class="text-cinnamon-700 border-b-2 border-cinnamon-700 pb-1">Contact Us</a>
+      </nav>
+
+      <!-- CTA Quote Button -->
+      <div class="flex items-center gap-4">
+        <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-cinnamon-700 to-cinnamon-600 text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full shadow-md">
+          <span>Inquire Export</span>
+          <i class="fa-solid fa-paper-plane text-[10px]"></i>
+        </a>
+
+        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-cinnamon-900 hover:bg-cinnamon-100/80">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Light Background) -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white border-b border-cinnamon-200 px-6 py-6 shadow-2xl">
+      <div class="flex flex-col gap-4 text-base font-bold text-cinnamon-900">
+        <a href="index.html" class="mobile-nav-link hover:text-cinnamon-700">Home</a>
+        <a href="about.html" class="mobile-nav-link hover:text-cinnamon-700">About Us</a>
+        <a href="products.html" class="mobile-nav-link hover:text-cinnamon-700">Products</a>
+        <a href="process.html" class="mobile-nav-link hover:text-cinnamon-700">Our Process</a>
+        <a href="index.html#team" class="mobile-nav-link hover:text-cinnamon-700">Meet Our Team</a>
+        <a href="contact.html" class="mobile-nav-link text-cinnamon-700 font-extrabold">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pt-36 pb-20 bg-cinnamon-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center space-y-4 relative z-10">
+      <span class="text-xs font-bold uppercase tracking-[0.25em] text-ceylon-gold bg-ceylon-gold/10 px-4 py-1.5 rounded-full inline-block border border-ceylon-gold/30">
+        Direct Export Support
+      </span>
+      <h1 class="text-4xl sm:text-6xl font-serif font-bold text-cinnamon-50">Contact Zelan Cinnamon</h1>
+      <p class="text-base sm:text-xl text-cinnamon-300 font-light max-w-2xl mx-auto">
+        Reach out directly for wholesale quotes, product specifications, or sample dispatches.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="py-20 px-4 sm:px-8 max-w-7xl mx-auto space-y-16">
+    <div class="grid lg:grid-cols-12 gap-12">
+      
+      <!-- Contact Info Sidebar -->
+      <div class="lg:col-span-5 bg-cinnamon-900 text-white rounded-3xl p-8 sm:p-10 space-y-8 shadow-xl">
+        <div>
+          <span class="text-ceylon-gold text-xs font-bold uppercase tracking-widest">Sri Lanka Export Desk</span>
+          <h2 class="font-serif text-3xl font-bold text-white mt-1">Get In Touch</h2>
+          <p class="text-xs text-cinnamon-200 mt-2 font-light leading-relaxed">
+            Our export sales team is ready to assist you with commercial spice inquiries.
+          </p>
+        </div>
+
+        <div class="space-y-6 text-sm">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-cinnamon-800 text-ceylon-gold flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <p class="text-xs text-cinnamon-400 font-bold uppercase">Email Address</p>
+              <a href="mailto:zelancinnamon@gmail.com" class="text-white hover:text-ceylon-gold font-medium">zelancinnamon@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-cinnamon-800 text-ceylon-gold flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <p class="text-xs text-cinnamon-400 font-bold uppercase">Phone Number</p>
+              <a href="tel:0720801611" class="text-white hover:text-ceylon-gold font-medium">0720801611</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-cinnamon-800 text-ceylon-gold flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <div>
+              <p class="text-xs text-cinnamon-400 font-bold uppercase">Social Media</p>
+              <div class="flex items-center gap-4 mt-1">
+                <a href="https://www.instagram.com/zelancinnamon?utm_source=qr" target="_blank" rel="noopener" class="text-cinnamon-200 hover:text-ceylon-gold text-sm flex items-center gap-1.5"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/share/1DVNTZgu8G/?mibextid=wwXIfr" target="_blank" rel="noopener" class="text-cinnamon-200 hover:text-ceylon-gold text-sm flex items-center gap-1.5"><i class="fa-brands fa-facebook"></i> Facebook</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-cinnamon-800 text-ceylon-gold flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-xs text-cinnamon-400 font-bold uppercase">Country of Origin</p>
+              <p class="text-white font-medium">Sri Lanka (Ceylon)</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/94720801611?text=Hello%20Zelan%20Cinnamon,%20I%20have%20an%20export%20inquiry." target="_blank" class="w-full py-3.5 rounded-xl bg-ceylon-green hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-3 transition-colors shadow-lg">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Direct WhatsApp (0720801611)</span>
+        </a>
+      </div>
+
+      <!-- Main Form -->
+      <div class="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-cinnamon-200 shadow-xl">
+        <form id="contact-form" action="https://formsubmit.co/zelancinnamon@gmail.com" method="POST" class="space-y-6" novalidate>
+          <input type="hidden" name="_subject" value="New Inquiry via Contact Page - Zelan Cinnamon">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div id="form-feedback" class="hidden"></div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div class="form-group space-y-2">
+              <label for="fullName" class="block text-xs font-bold uppercase tracking-wider text-cinnamon-800">Full Name *</label>
+              <input type="text" id="fullName" name="Full Name" placeholder="e.g. Jane Doe" required class="w-full px-4 py-3.5 rounded-xl border border-cinnamon-300 bg-cinnamon-50/30 text-sm focus:outline-none focus:ring-2 focus:ring-cinnamon-600">
+            </div>
+
+            <div class="form-group space-y-2">
+              <label for="email" class="block text-xs font-bold uppercase tracking-wider text-cinnamon-800">Email Address *</label>
+              <input type="email" id="email" name="Email Address" placeholder="e.g. jane@company.com" required class="w-full px-4 py-3.5 rounded-xl border border-cinnamon-300 bg-cinnamon-50/30 text-sm focus:outline-none focus:ring-2 focus:ring-cinnamon-600">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div class="form-group space-y-2">
+              <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-cinnamon-800">Phone Number *</label>
+              <input type="tel" id="phone" name="Phone Number" placeholder="e.g. 0720801611" required class="w-full px-4 py-3.5 rounded-xl border border-cinnamon-300 bg-cinnamon-50/30 text-sm focus:outline-none focus:ring-2 focus:ring-cinnamon-600">
+            </div>
+
+            <div class="form-group space-y-2">
+              <label for="subject" class="block text-xs font-bold uppercase tracking-wider text-cinnamon-800">Subject *</label>
+              <input type="text" id="subject" name="Subject" placeholder="e.g. Inquiry regarding Alba Quills" required class="w-full px-4 py-3.5 rounded-xl border border-cinnamon-300 bg-cinnamon-50/30 text-sm focus:outline-none focus:ring-2 focus:ring-cinnamon-600">
+            </div>
+          </div>
+
+          <div class="form-group space-y-2">
+            <label for="message" class="block text-xs font-bold uppercase tracking-wider text-cinnamon-800">Message *</label>
+            <textarea id="message" name="Message" rows="5" placeholder="Write your message or export requirements here..." required class="w-full px-4 py-3.5 rounded-xl border border-cinnamon-300 bg-cinnamon-50/30 text-sm focus:outline-none focus:ring-2 focus:ring-cinnamon-600"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-cinnamon-900 hover:bg-cinnamon-800 text-white font-bold text-sm uppercase tracking-wider shadow-lg transition-colors flex items-center justify-center gap-2">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-cinnamon-900 text-white py-12 px-4 sm:px-8 border-t border-cinnamon-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-cinnamon-300">
+      <div class="flex items-center gap-3">
+        <span class="font-serif text-lg font-bold text-white">ZELAN CINNAMON</span>
+        <span>&bull;</span>
+        <span>zelancinnamon@gmail.com</span>
+        <span>&bull;</span>
+        <span>0720801611</span>
+      </div>
+      <p>&copy; 2026 Zelan Cinnamon. Sri Lankan Ceylon Cinnamon Exporter.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

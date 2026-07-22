@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Process | Zelan Cinnamon Sri Lanka</title>
+  <meta name="description" content="Discover the 6-stage production and export process at Zelan Cinnamon: Farmers -> Processing -> Packaging -> Warehouse -> Export -> Customers.">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cinnamon: {
+              50: '#FFF8F0',
+              100: '#FAF0E6',
+              200: '#F4E3CE',
+              300: '#E7C8A4',
+              400: '#D2B48C',
+              500: '#B8860B',
+              600: '#8B4513',
+              700: '#6B3410',
+              800: '#4A230B',
+              900: '#2C1406',
+            },
+            ceylon: {
+              green: '#2D5A27',
+              darkgreen: '#1E3F1B',
+              lightgreen: '#EAF4E8',
+              gold: '#D4AF37',
+              goldhover: '#B59226',
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#FFF8F0] text-[#2C1810] antialiased">
+
+  <!-- HEADER (LIGHT DESIGN) -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 sm:px-8 bg-white/95 backdrop-blur-md border-b border-cinnamon-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-cinnamon-700 via-cinnamon-600 to-ceylon-gold flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform duration-300 border border-cinnamon-300">
+          <i class="fa-solid fa-seedling text-lg text-amber-100"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-bold tracking-tight text-cinnamon-950 leading-none">ZELAN</span>
+          <span class="text-[10px] tracking-[0.25em] text-cinnamon-700 font-bold uppercase mt-1">CINNAMON</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-cinnamon-900">
+        <a href="index.html" class="hover:text-cinnamon-600 transition-colors py-1">Home</a>
+        <a href="about.html" class="hover:text-cinnamon-600 transition-colors py-1">About Us</a>
+        <a href="products.html" class="hover:text-cinnamon-600 transition-colors py-1">Products</a>
+        <a href="process.html" class="text-cinnamon-700 border-b-2 border-cinnamon-700 pb-1">Our Process</a>
+        <a href="index.html#team" class="hover:text-cinnamon-600 transition-colors py-1">Our Team</a>
+        <a href="contact.html" class="hover:text-cinnamon-600 transition-colors py-1">Contact Us</a>
+      </nav>
+
+      <!-- CTA Quote Button -->
+      <div class="flex items-center gap-4">
+        <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-cinnamon-700 to-cinnamon-600 text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full shadow-md">
+          <span>Inquire Export</span>
+          <i class="fa-solid fa-paper-plane text-[10px]"></i>
+        </a>
+
+        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-cinnamon-900 hover:bg-cinnamon-100/80">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Light Background) -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white border-b border-cinnamon-200 px-6 py-6 shadow-2xl">
+      <div class="flex flex-col gap-4 text-base font-bold text-cinnamon-900">
+        <a href="index.html" class="mobile-nav-link hover:text-cinnamon-700">Home</a>
+        <a href="about.html" class="mobile-nav-link hover:text-cinnamon-700">About Us</a>
+        <a href="products.html" class="mobile-nav-link hover:text-cinnamon-700">Products</a>
+        <a href="process.html" class="mobile-nav-link text-cinnamon-700 font-extrabold">Our Process</a>
+        <a href="index.html#team" class="mobile-nav-link hover:text-cinnamon-700">Meet Our Team</a>
+        <a href="contact.html" class="mobile-nav-link hover:text-cinnamon-700">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pt-36 pb-20 bg-cinnamon-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center space-y-4 relative z-10">
+      <span class="text-xs font-bold uppercase tracking-[0.25em] text-ceylon-gold bg-ceylon-gold/10 px-4 py-1.5 rounded-full inline-block border border-ceylon-gold/30">
+        Supply Chain Quality Assurance
+      </span>
+      <h1 class="text-4xl sm:text-6xl font-serif font-bold text-cinnamon-50">Our Production & Export Process</h1>
+      <p class="text-base sm:text-xl text-cinnamon-300 font-light max-w-2xl mx-auto">
+        Farmers &rarr; Processing &rarr; Packaging &rarr; Warehouse &rarr; Export &rarr; Customers
+      </p>
+    </div>
+  </section>
+
+  <!-- DETAILED STEP BY STEP PROCESS -->
+  <section class="py-20 px-4 sm:px-8 max-w-6xl mx-auto space-y-16">
+    
+    <!-- Stage 1 -->
+    <div class="grid md:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-8 border border-cinnamon-200 shadow-md">
+      <div class="md:col-span-3 text-center md:text-left">
+        <span class="text-3xl font-serif font-bold text-ceylon-gold">01</span>
+        <h3 class="font-serif text-2xl font-bold text-cinnamon-900 mt-1">Farmers</h3>
+        <span class="text-xs uppercase font-bold text-cinnamon-600 tracking-wider">Ethical Sourcing</span>
+      </div>
+      <div class="md:col-span-9 space-y-2">
+        <p class="text-sm text-cinnamon-800 leading-relaxed font-light">
+          We partner with smallholder cinnamon farmers across southern Sri Lanka. Shoots are harvested at optimum maturity (usually 2 to 3 years old) to maximize volatile essential oils and sweet aroma.
+        </p>
+      </div>
+    </div>
+
+    <!-- Stage 2 -->
+    <div class="grid md:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-8 border border-cinnamon-200 shadow-md">
+      <div class="md:col-span-3 text-center md:text-left">
+        <span class="text-3xl font-serif font-bold text-ceylon-gold">02</span>
+        <h3 class="font-serif text-2xl font-bold text-cinnamon-900 mt-1">Processing</h3>
+        <span class="text-xs uppercase font-bold text-cinnamon-600 tracking-wider">Artisanal Hand-Peeling</span>
+      </div>
+      <div class="md:col-span-9 space-y-2">
+        <p class="text-sm text-cinnamon-800 leading-relaxed font-light">
+          Master peelers scrap off the coarse outer bark and carefully peel the fragile inner bark into thin layers. These delicate layers are hand-rolled together to form tight, multi-layered quills and sun-dried under covered hygienic sheds.
+        </p>
+      </div>
+    </div>
+
+    <!-- Stage 3 -->
+    <div class="grid md:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-8 border border-cinnamon-200 shadow-md">
+      <div class="md:col-span-3 text-center md:text-left">
+        <span class="text-3xl font-serif font-bold text-ceylon-gold">03</span>
+        <h3 class="font-serif text-2xl font-bold text-cinnamon-900 mt-1">Packaging</h3>
+        <span class="text-xs uppercase font-bold text-cinnamon-600 tracking-wider">Food-Grade Sealing</span>
+      </div>
+      <div class="md:col-span-9 space-y-2">
+        <p class="text-sm text-cinnamon-800 leading-relaxed font-light">
+          Quills are sorted into precise length and thickness grades (Alba, C5, M4). Dried quills and milled powder are packed in moisture-barrier food-grade poly bags and woven jute bales.
+        </p>
+      </div>
+    </div>
+
+    <!-- Stage 4 -->
+    <div class="grid md:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-8 border border-cinnamon-200 shadow-md">
+      <div class="md:col-span-3 text-center md:text-left">
+        <span class="text-3xl font-serif font-bold text-ceylon-gold">04</span>
+        <h3 class="font-serif text-2xl font-bold text-cinnamon-900 mt-1">Warehouse</h3>
+        <span class="text-xs uppercase font-bold text-cinnamon-600 tracking-wider">Climate Control</span>
+      </div>
+      <div class="md:col-span-9 space-y-2">
+        <p class="text-sm text-cinnamon-800 leading-relaxed font-light">
+          Packaged stock is stored in climate-controlled warehouses free of moisture, pests, or direct sunlight to retain high volatile oil concentrations.
+        </p>
+      </div>
+    </div>
+
+    <!-- Stage 5 -->
+    <div class="grid md:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-8 border border-cinnamon-200 shadow-md">
+      <div class="md:col-span-3 text-center md:text-left">
+        <span class="text-3xl font-serif font-bold text-ceylon-gold">05</span>
+        <h3 class="font-serif text-2xl font-bold text-cinnamon-900 mt-1">Export</h3>
+        <span class="text-xs uppercase font-bold text-cinnamon-600 tracking-wider">Global Shipping</span>
+      </div>
+      <div class="md:col-span-9 space-y-2">
+        <p class="text-sm text-cinnamon-800 leading-relaxed font-light">
+          Consignments undergo phytosanitary inspection by the Sri Lanka Department of Agriculture and customs clearance before being loaded into FCL/LCL ocean containers or express air freight.
+        </p>
+      </div>
+    </div>
+
+    <!-- Stage 6 -->
+    <div class="grid md:grid-cols-12 gap-8 items-center bg-ceylon-green text-white rounded-3xl p-8 shadow-xl">
+      <div class="md:col-span-3 text-center md:text-left">
+        <span class="text-3xl font-serif font-bold text-ceylon-gold">06</span>
+        <h3 class="font-serif text-2xl font-bold text-white mt-1">Customers</h3>
+        <span class="text-xs uppercase font-bold text-emerald-200 tracking-wider">Worldwide Delivery</span>
+      </div>
+      <div class="md:col-span-9 space-y-2">
+        <p class="text-sm text-emerald-50 leading-relaxed font-light">
+          Fresh, aromatic, 100% pure Ceylon Cinnamon arrives safely at spice distributors, tea brands, food manufacturers, and retail chains across North America, Europe, Asia, and the Middle East.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-cinnamon-900 text-white py-12 px-4 sm:px-8 border-t border-cinnamon-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-cinnamon-300">
+      <div class="flex items-center gap-3">
+        <span class="font-serif text-lg font-bold text-white">ZELAN CINNAMON</span>
+        <span>&bull;</span>
+        <span>zelancinnamon@gmail.com</span>
+        <span>&bull;</span>
+        <span>0720801611</span>
+      </div>
+      <p>&copy; 2026 Zelan Cinnamon. Sri Lankan Ceylon Cinnamon Exporter.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

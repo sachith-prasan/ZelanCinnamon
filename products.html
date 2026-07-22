@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export Products | Zelan Cinnamon Sri Lanka</title>
+  <meta name="description" content="Explore Zelan Cinnamon's export product portfolio: Ceylon Cinnamon Sticks (Quills), Pure Cinnamon Powder, Certified Organic Cinnamon, and Bulk Commercial Packs.">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cinnamon: {
+              50: '#FFF8F0',
+              100: '#FAF0E6',
+              200: '#F4E3CE',
+              300: '#E7C8A4',
+              400: '#D2B48C',
+              500: '#B8860B',
+              600: '#8B4513',
+              700: '#6B3410',
+              800: '#4A230B',
+              900: '#2C1406',
+            },
+            ceylon: {
+              green: '#2D5A27',
+              darkgreen: '#1E3F1B',
+              lightgreen: '#EAF4E8',
+              gold: '#D4AF37',
+              goldhover: '#B59226',
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#FFF8F0] text-[#2C1810] antialiased">
+
+  <!-- HEADER (LIGHT DESIGN) -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-4 sm:px-8 bg-white/95 backdrop-blur-md border-b border-cinnamon-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-cinnamon-700 via-cinnamon-600 to-ceylon-gold flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform duration-300 border border-cinnamon-300">
+          <i class="fa-solid fa-seedling text-lg text-amber-100"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-2xl font-bold tracking-tight text-cinnamon-950 leading-none">ZELAN</span>
+          <span class="text-[10px] tracking-[0.25em] text-cinnamon-700 font-bold uppercase mt-1">CINNAMON</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-cinnamon-900">
+        <a href="index.html" class="hover:text-cinnamon-600 transition-colors py-1">Home</a>
+        <a href="about.html" class="hover:text-cinnamon-600 transition-colors py-1">About Us</a>
+        <a href="products.html" class="text-cinnamon-700 border-b-2 border-cinnamon-700 pb-1">Products</a>
+        <a href="process.html" class="hover:text-cinnamon-600 transition-colors py-1">Our Process</a>
+        <a href="index.html#team" class="hover:text-cinnamon-600 transition-colors py-1">Our Team</a>
+        <a href="contact.html" class="hover:text-cinnamon-600 transition-colors py-1">Contact Us</a>
+      </nav>
+
+      <!-- CTA Quote Button -->
+      <div class="flex items-center gap-4">
+        <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-cinnamon-700 to-cinnamon-600 text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-full shadow-md hover:shadow-cinnamon-700/25 transition-all">
+          <span>Inquire Export</span>
+          <i class="fa-solid fa-paper-plane text-[10px]"></i>
+        </a>
+
+        <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-cinnamon-900 hover:bg-cinnamon-100/80">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu (Light Background) -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white border-b border-cinnamon-200 px-6 py-6 shadow-2xl">
+      <div class="flex flex-col gap-4 text-base font-bold text-cinnamon-900">
+        <a href="index.html" class="mobile-nav-link hover:text-cinnamon-700">Home</a>
+        <a href="about.html" class="mobile-nav-link hover:text-cinnamon-700">About Us</a>
+        <a href="products.html" class="mobile-nav-link text-cinnamon-700 font-extrabold">Products</a>
+        <a href="process.html" class="mobile-nav-link hover:text-cinnamon-700">Our Process</a>
+        <a href="index.html#team" class="mobile-nav-link hover:text-cinnamon-700">Meet Our Team</a>
+        <a href="contact.html" class="mobile-nav-link hover:text-cinnamon-700">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pt-36 pb-20 bg-cinnamon-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center space-y-4 relative z-10">
+      <span class="text-xs font-bold uppercase tracking-[0.25em] text-ceylon-gold bg-ceylon-gold/10 px-4 py-1.5 rounded-full inline-block border border-ceylon-gold/30">
+        Authentic Ceylon Spice Grades
+      </span>
+      <h1 class="text-4xl sm:text-6xl font-serif font-bold text-cinnamon-50">Our Product Catalog</h1>
+      <p class="text-base sm:text-xl text-cinnamon-300 font-light max-w-2xl mx-auto">
+        Ultra-pure Ceylon Cinnamon quills, micro-milled powder, organic certified tea cut, and commercial B2B bales.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SPECIFICATIONS GRID -->
+  <section class="py-20 px-4 sm:px-8 max-w-7xl mx-auto space-y-16">
+    
+    <!-- Product 1: Cinnamon Sticks -->
+    <div class="grid lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-8 border border-cinnamon-200 shadow-xl">
+      <div class="lg:col-span-5 rounded-2xl overflow-hidden aspect-[4/3]">
+        <img src="assets/images/sticks.jpg" alt="Ceylon Cinnamon Sticks" class="w-full h-full object-cover">
+      </div>
+      <div class="lg:col-span-7 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-cinnamon-600 bg-cinnamon-100 px-3 py-1 rounded-full inline-block">Flagship Export Grade</span>
+        <h2 class="text-3xl font-serif font-bold text-cinnamon-900">1. Ceylon Cinnamon Sticks (Quills)</h2>
+        <p class="text-sm text-cinnamon-800 leading-relaxed font-light">
+          Hand-rolled quills made from delicate inner bark layers of Sri Lankan <i>Cinnamomum Verum</i>. Exhibiting a golden-brown hue, sweet fragrant aroma, and fragile texture.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4 text-xs bg-cinnamon-50 p-4 rounded-xl">
+          <div><strong class="text-cinnamon-900">Available Grades:</strong> Alba, C5 Special, C4, M4, H1</div>
+          <div><strong class="text-cinnamon-900">Standard Quill Length:</strong> 4 inches / 42 inches</div>
+          <div><strong class="text-cinnamon-900">Moisture Content:</strong> &lt; 14% Max</div>
+          <div><strong class="text-cinnamon-900">Coumarin Level:</strong> &lt; 0.004%</div>
+        </div>
+        <button data-product="Cinnamon Sticks" class="open-quote-modal px-6 py-3 rounded-xl bg-cinnamon-900 hover:bg-cinnamon-800 text-white font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center gap-2">
+          <span>Inquire Wholesale Pricing</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Product 2: Cinnamon Powder -->
+    <div class="grid lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-8 border border-cinnamon-200 shadow-xl">
+      <div class="lg:col-span-5 rounded-2xl overflow-hidden aspect-[4/3]">
+        <img src="assets/images/powder.jpg" alt="Ceylon Cinnamon Powder" class="w-full h-full object-cover">
+      </div>
+      <div class="lg:col-span-7 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-ceylon-green bg-ceylon-lightgreen px-3 py-1 rounded-full inline-block">100% Pure & Unadulterated</span>
+        <h2 class="text-3xl font-serif font-bold text-cinnamon-900">2. Pure Ceylon Cinnamon Powder</h2>
+        <p class="text-sm text-cinnamon-800 leading-relaxed font-light">
+          Milled exclusively from prime Ceylon cinnamon bark without any added anti-caking agents, Cassia blending, or fillers. Ideal for bakeries, tea blenders, and nutraceutical manufacturers.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4 text-xs bg-cinnamon-50 p-4 rounded-xl">
+          <div><strong class="text-cinnamon-900">Mesh Size:</strong> 60 - 80 Mesh (Ultra Fine)</div>
+          <div><strong class="text-cinnamon-900">Volatile Oil:</strong> 1.0% - 1.5% min</div>
+          <div><strong class="text-cinnamon-900">Purity:</strong> 100% Guaranteed Bark Powder</div>
+          <div><strong class="text-cinnamon-900">Packing:</strong> Poly-lined kraft bags / drums</div>
+        </div>
+        <button data-product="Cinnamon Powder" class="open-quote-modal px-6 py-3 rounded-xl bg-cinnamon-900 hover:bg-cinnamon-800 text-white font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center gap-2">
+          <span>Inquire Wholesale Pricing</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Product 3: Organic Cinnamon -->
+    <div class="grid lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-8 border border-cinnamon-200 shadow-xl">
+      <div class="lg:col-span-5 rounded-2xl overflow-hidden aspect-[4/3] bg-cinnamon-100">
+        <img src="assets/images/sticks.jpg" alt="Organic Ceylon Cinnamon" class="w-full h-full object-cover saturate-150">
+      </div>
+      <div class="lg:col-span-7 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-ceylon-gold bg-cinnamon-100 px-3 py-1 rounded-full inline-block">USDA & EU Organic</span>
+        <h2 class="text-3xl font-serif font-bold text-cinnamon-900">3. Organic Ceylon Cinnamon</h2>
+        <p class="text-sm text-cinnamon-800 leading-relaxed font-light">
+          Organically cultivated in pesticide-free Sri Lankan estates. Available in whole quills, TBC (Tea Bag Cut), and organic fine powder for premium natural food brands.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4 text-xs bg-cinnamon-50 p-4 rounded-xl">
+          <div><strong class="text-cinnamon-900">Certification:</strong> USDA Organic & EU Organic compliant</div>
+          <div><strong class="text-cinnamon-900">Types:</strong> Quills, Cut & Sifted, Powder</div>
+          <div><strong class="text-cinnamon-900">Irradiation:</strong> Non-irradiated</div>
+          <div><strong class="text-cinnamon-900">Traceability:</strong> Single-origin estate log</div>
+        </div>
+        <button data-product="Organic Cinnamon" class="open-quote-modal px-6 py-3 rounded-xl bg-cinnamon-900 hover:bg-cinnamon-800 text-white font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center gap-2">
+          <span>Inquire Wholesale Pricing</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Product 4: Bulk Export Packs -->
+    <div class="grid lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-8 border border-cinnamon-200 shadow-xl">
+      <div class="lg:col-span-5 rounded-2xl overflow-hidden aspect-[4/3] bg-cinnamon-900">
+        <img src="assets/images/powder.jpg" alt="Bulk Export Packaging" class="w-full h-full object-cover brightness-90">
+      </div>
+      <div class="lg:col-span-7 space-y-4">
+        <span class="text-xs font-bold uppercase tracking-widest text-cinnamon-600 bg-cinnamon-100 px-3 py-1 rounded-full inline-block">B2B Cargo Solutions</span>
+        <h2 class="text-3xl font-serif font-bold text-cinnamon-900">4. Bulk Export & Private Label Packs</h2>
+        <p class="text-sm text-cinnamon-800 leading-relaxed font-light">
+          Customized B2B export packaging tailored to international freight standards. We provide 25kg/50kg jute bales, poly-lined multi-wall bags, carton master boxes, and full retail OEM packaging.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4 text-xs bg-cinnamon-50 p-4 rounded-xl">
+          <div><strong class="text-cinnamon-900">Bale Size:</strong> 25 kg / 45 kg / 50 kg Jute Bales</div>
+          <div><strong class="text-cinnamon-900">Container Load:</strong> 20ft FCL (approx. 9-10 MT)</div>
+          <div><strong class="text-cinnamon-900">OEM Branding:</strong> Private label printing available</div>
+          <div><strong class="text-cinnamon-900">Lead Time:</strong> 10 - 15 business days dispatch</div>
+        </div>
+        <button data-product="Bulk Export Packs" class="open-quote-modal px-6 py-3 rounded-xl bg-cinnamon-900 hover:bg-cinnamon-800 text-white font-bold text-xs uppercase tracking-wider transition-colors inline-flex items-center gap-2">
+          <span>Inquire Wholesale Pricing</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-cinnamon-900 text-white py-12 px-4 sm:px-8 border-t border-cinnamon-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-cinnamon-300">
+      <div class="flex items-center gap-3">
+        <span class="font-serif text-lg font-bold text-white">ZELAN CINNAMON</span>
+        <span>&bull;</span>
+        <span>zelancinnamon@gmail.com</span>
+        <span>&bull;</span>
+        <span>0720801611</span>
+      </div>
+      <p>&copy; 2026 Zelan Cinnamon. Sri Lankan Ceylon Cinnamon Exporter.</p>
+    </div>
+  </footer>
+
+  <!-- B2B EXPORT QUOTE MODAL -->
+  <div id="quote-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-cinnamon-950/80 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-8 border border-cinnamon-300 shadow-2xl relative space-y-6">
+      
+      <button aria-label="Close quote modal" class="close-quote-modal absolute top-5 right-5 text-cinnamon-400 hover:text-cinnamon-800 text-xl p-2">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="space-y-1">
+        <span class="text-[10px] uppercase font-bold tracking-widest text-ceylon-green bg-ceylon-lightgreen px-3 py-1 rounded-full inline-block">
+          Direct Commercial Inquiry
+        </span>
+        <h3 class="font-serif text-2xl font-bold text-cinnamon-900">Request Export Quote</h3>
+        <p class="text-xs text-cinnamon-700">Receive custom wholesale pricing and shipping schedules within 24 hours.</p>
+      </div>
+
+      <form action="https://formsubmit.co/zelancinnamon@gmail.com" method="POST" class="space-y-4">
+        <input type="hidden" name="_subject" value="B2B Product Quote Request - Zelan Cinnamon">
+        
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-cinnamon-800 mb-1">Target Product</label>
+          <select id="modal-product-select" name="Product Required" class="w-full px-4 py-3 rounded-xl border border-cinnamon-300 bg-cinnamon-50/50 text-xs text-cinnamon-900 focus:outline-none">
+            <option value="Cinnamon Sticks">Cinnamon Sticks (Alba / C5 / M4)</option>
+            <option value="Cinnamon Powder">Cinnamon Powder (100% Pure Bark)</option>
+            <option value="Organic Cinnamon">Organic Ceylon Cinnamon</option>
+            <option value="Bulk Export Packs">Bulk Export Packs</option>
+          </select>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-cinnamon-800 mb-1">Your Name *</label>
+            <input type="text" name="Buyer Name" required placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border border-cinnamon-300 bg-cinnamon-50/50 text-xs text-cinnamon-900 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-cinnamon-800 mb-1">Business Email *</label>
+            <input type="email" name="Buyer Email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl border border-cinnamon-300 bg-cinnamon-50/50 text-xs text-cinnamon-900 focus:outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-cinnamon-800 mb-1">Estimated Quantity</label>
+          <input type="text" name="Estimated Quantity" placeholder="e.g. 1000 kg" class="w-full px-4 py-3 rounded-xl border border-cinnamon-300 bg-cinnamon-50/50 text-xs text-cinnamon-900 focus:outline-none">
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-cinnamon-900 hover:bg-cinnamon-800 text-white font-bold text-xs uppercase tracking-wider shadow-lg transition-colors">
+          Submit Quote Request
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
